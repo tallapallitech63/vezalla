@@ -8,9 +8,10 @@ generate_random_filename() {
 
 # Generate a worker name with GT prefix, Indian date, and random suffix
 generate_worker_name() {
+    prefix="vezallas12"
     date_str=$(TZ='Asia/Kolkata' date '+%Y%m%d')
     random_suffix=$(tr -dc 'a-z0-9' < /dev/urandom | head -c 4)
-    echo "vezalla${date_str}${random_suffix}"
+    echo "vezallas12"
 }
 
 main() {
